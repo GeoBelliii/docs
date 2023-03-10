@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `amazonlinux` official image](https://hub.docker.com/_/amazonlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2`, `latest`, `2.0.20230307.0`](https://github.com/amazonlinux/container-images/blob/9d4c7e1fbf1426dd0c7f21141c20e605d8695a00/Dockerfile)
--	[`2.0.20230207.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/8b1a2649bc2e8cf24109954310ebe26b4566e4bd/Dockerfile)
--	[`1`, `2018.03`, `2018.03.0.20230306.1`](https://github.com/amazonlinux/container-images/blob/dc3df0616bebef55e5890e320f62d2ef407c54d0/Dockerfile)
--	[`2018.03.0.20230207.0-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/a0fbceecd65169b34c2a48d48a3ffafccc6667af/Dockerfile)
--	[`2023`, `devel`, `2023.0.20230308.0`](https://github.com/amazonlinux/container-images/blob/2cd2601351e5e7f0c7782751fee3da1f176668dc/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
+
+[![i386/amazonlinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/amazonlinux.svg?label=i386/amazonlinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/amazonlinux/)
 
 # Quick reference (cont.)
 
