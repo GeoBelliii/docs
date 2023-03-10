@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `sonarqube` official image](https://hub.docker.com/_/sonarqube) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -29,6 +31,8 @@ WARNING:
 -	[`9.9.0-enterprise`, `9.9-enterprise`, `9-enterprise`, `enterprise`, `lts-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/ed2071a47632c34d7639b6ad1b393ab2aee1c9a8/9/enterprise/Dockerfile)
 -	[`9.9.0-datacenter-app`, `9.9-datacenter-app`, `9-datacenter-app`, `datacenter-app`, `lts-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/ed2071a47632c34d7639b6ad1b393ab2aee1c9a8/9/datacenter/app/Dockerfile)
 -	[`9.9.0-datacenter-search`, `9.9-datacenter-search`, `9-datacenter-search`, `datacenter-search`, `lts-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/ed2071a47632c34d7639b6ad1b393ab2aee1c9a8/9/datacenter/search/Dockerfile)
+
+[![arm64v8/sonarqube build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/sonarqube.svg?label=arm64v8/sonarqube%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/sonarqube/)
 
 # Quick reference (cont.)
 
@@ -133,7 +137,7 @@ $ docker run -ti sonarqube-custom
 A SonarQube instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time which the docker does not expect by default when stopping. To avoid having the SonarQube instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
-docker run --stop-timeout 3600 sonarqube
+docker run --stop-timeout 3600 arm64v8/sonarqube
 ```
 
 ## Administration
