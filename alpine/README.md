@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `alpine` official image](https://hub.docker.com/_/alpine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20230208`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/a4149305cd4d815083f3dcf4c948e0ac4f1e99dd/x86_64/Dockerfile)
--	[`3.17.2`, `3.17`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/d8ed1701dac37e1b6db026bec0a26be683288074/x86_64/Dockerfile)
--	[`3.16.4`, `3.16`](https://github.com/alpinelinux/docker-alpine/blob/106cf8fa24b495c3c7cac2ef3564fb78aef24751/x86_64/Dockerfile)
--	[`3.15.7`, `3.15`](https://github.com/alpinelinux/docker-alpine/blob/2060d1dc5d0532fbc48f8735e77f5e787ebbff60/x86_64/Dockerfile)
--	[`3.14.9`, `3.14`](https://github.com/alpinelinux/docker-alpine/blob/b040c4549c910e61cc9e783ef7741fed7a7b9e96/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/alpine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/alpine.svg?label=winamd64/alpine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/alpine/)
 
 # Quick reference (cont.)
 
@@ -62,7 +62,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.14
+FROM winamd64/alpine:3.14
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
