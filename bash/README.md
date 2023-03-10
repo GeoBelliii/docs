@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `bash` official image](https://hub.docker.com/_/bash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,18 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`devel-20230306`, `devel`, `devel-20230306-alpine3.16`, `devel-alpine3.16`](https://github.com/tianon/docker-bash/blob/981264b4f0246c3fc6279f03d3a37b055d7b9cbf/devel/Dockerfile)
--	[`5.2.15`, `5.2`, `5`, `latest`, `5.2.15-alpine3.16`, `5.2-alpine3.16`, `5-alpine3.16`, `alpine3.16`](https://github.com/tianon/docker-bash/blob/cb26ef95b253f1bd736824c8e88d86e9dcadfa5e/5.2/Dockerfile)
--	[`5.1.16`, `5.1`, `5.1.16-alpine3.16`, `5.1-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/5.1/Dockerfile)
--	[`5.0.18`, `5.0`, `5.0.18-alpine3.16`, `5.0-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/5.0/Dockerfile)
--	[`4.4.23`, `4.4`, `4`, `4.4.23-alpine3.16`, `4.4-alpine3.16`, `4-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.4/Dockerfile)
--	[`4.3.48`, `4.3`, `4.3.48-alpine3.16`, `4.3-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.3/Dockerfile)
--	[`4.2.53`, `4.2`, `4.2.53-alpine3.16`, `4.2-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.2/Dockerfile)
--	[`4.1.17`, `4.1`, `4.1.17-alpine3.16`, `4.1-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.1/Dockerfile)
--	[`4.0.44`, `4.0`, `4.0.44-alpine3.16`, `4.0-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/4.0/Dockerfile)
--	[`3.2.57`, `3.2`, `3`, `3.2.57-alpine3.16`, `3.2-alpine3.16`, `3-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/3.2/Dockerfile)
--	[`3.1.23`, `3.1`, `3.1.23-alpine3.16`, `3.1-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/3.1/Dockerfile)
--	[`3.0.22`, `3.0`, `3.0.22-alpine3.16`, `3.0-alpine3.16`](https://github.com/tianon/docker-bash/blob/ab48980aaa9b26f074375b19fe430e4bf5970573/3.0/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
+
+[![riscv64/bash build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/bash.svg?label=riscv64/bash%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/riscv64/job/bash/)
 
 # Quick reference (cont.)
 
@@ -79,7 +72,7 @@ There are a few main things that are important to note regarding this image:
 ## Interactive shell
 
 ```console
-$ docker run -it --rm bash:4.4
+$ docker run -it --rm riscv64/bash:4.4
 bash-4.4# which bash
 /usr/local/bin/bash
 bash-4.4# echo $BASH_VERSION
@@ -89,16 +82,16 @@ bash-4.4# echo $BASH_VERSION
 ## Testing scripts via bind-mount
 
 ```console
-$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro bash:4.4 bash /script.sh
+$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro riscv64/bash:4.4 bash /script.sh
 ...
-$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro bash:3.2 bash /script.sh
+$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro riscv64/bash:3.2 bash /script.sh
 ...
 ```
 
 ## Testing scripts via `Dockerfile`
 
 ```dockerfile
-FROM bash:4.4
+FROM riscv64/bash:4.4
 
 COPY script.sh /
 
