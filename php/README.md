@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `php` official image](https://hub.docker.com/_/php) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,10 +30,6 @@ WARNING:
 -	[`8.2.4RC1-apache-bullseye`, `8.2-rc-apache-bullseye`, `8.2.4RC1-apache`, `8.2-rc-apache`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/bullseye/apache/Dockerfile)
 -	[`8.2.4RC1-fpm-bullseye`, `8.2-rc-fpm-bullseye`, `8.2.4RC1-fpm`, `8.2-rc-fpm`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/bullseye/fpm/Dockerfile)
 -	[`8.2.4RC1-zts-bullseye`, `8.2-rc-zts-bullseye`, `8.2.4RC1-zts`, `8.2-rc-zts`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/bullseye/zts/Dockerfile)
--	[`8.2.4RC1-cli-buster`, `8.2-rc-cli-buster`, `8.2.4RC1-buster`, `8.2-rc-buster`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/buster/cli/Dockerfile)
--	[`8.2.4RC1-apache-buster`, `8.2-rc-apache-buster`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/buster/apache/Dockerfile)
--	[`8.2.4RC1-fpm-buster`, `8.2-rc-fpm-buster`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/buster/fpm/Dockerfile)
--	[`8.2.4RC1-zts-buster`, `8.2-rc-zts-buster`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/buster/zts/Dockerfile)
 -	[`8.2.4RC1-cli-alpine3.17`, `8.2-rc-cli-alpine3.17`, `8.2.4RC1-alpine3.17`, `8.2-rc-alpine3.17`, `8.2.4RC1-cli-alpine`, `8.2-rc-cli-alpine`, `8.2.4RC1-alpine`, `8.2-rc-alpine`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/alpine3.17/cli/Dockerfile)
 -	[`8.2.4RC1-fpm-alpine3.17`, `8.2-rc-fpm-alpine3.17`, `8.2.4RC1-fpm-alpine`, `8.2-rc-fpm-alpine`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/alpine3.17/fpm/Dockerfile)
 -	[`8.2.4RC1-zts-alpine3.17`, `8.2-rc-zts-alpine3.17`, `8.2.4RC1-zts-alpine`, `8.2-rc-zts-alpine`](https://github.com/docker-library/php/blob/68ebc4c8613ac3c56a4a5ca0fd716ddc270bf272/8.2-rc/alpine3.17/zts/Dockerfile)
@@ -42,10 +40,6 @@ WARNING:
 -	[`8.2.3-apache-bullseye`, `8.2-apache-bullseye`, `8-apache-bullseye`, `apache-bullseye`, `8.2.3-apache`, `8.2-apache`, `8-apache`, `apache`](https://github.com/docker-library/php/blob/277739fc7ba0948ffb38721ab3f8b139c6b41be7/8.2/bullseye/apache/Dockerfile)
 -	[`8.2.3-fpm-bullseye`, `8.2-fpm-bullseye`, `8-fpm-bullseye`, `fpm-bullseye`, `8.2.3-fpm`, `8.2-fpm`, `8-fpm`, `fpm`](https://github.com/docker-library/php/blob/eb33eee2833242f9f67827e881a8ad0432503292/8.2/bullseye/fpm/Dockerfile)
 -	[`8.2.3-zts-bullseye`, `8.2-zts-bullseye`, `8-zts-bullseye`, `zts-bullseye`, `8.2.3-zts`, `8.2-zts`, `8-zts`, `zts`](https://github.com/docker-library/php/blob/277739fc7ba0948ffb38721ab3f8b139c6b41be7/8.2/bullseye/zts/Dockerfile)
--	[`8.2.3-cli-buster`, `8.2-cli-buster`, `8-cli-buster`, `cli-buster`, `8.2.3-buster`, `8.2-buster`, `8-buster`, `buster`](https://github.com/docker-library/php/blob/277739fc7ba0948ffb38721ab3f8b139c6b41be7/8.2/buster/cli/Dockerfile)
--	[`8.2.3-apache-buster`, `8.2-apache-buster`, `8-apache-buster`, `apache-buster`](https://github.com/docker-library/php/blob/277739fc7ba0948ffb38721ab3f8b139c6b41be7/8.2/buster/apache/Dockerfile)
--	[`8.2.3-fpm-buster`, `8.2-fpm-buster`, `8-fpm-buster`, `fpm-buster`](https://github.com/docker-library/php/blob/eb33eee2833242f9f67827e881a8ad0432503292/8.2/buster/fpm/Dockerfile)
--	[`8.2.3-zts-buster`, `8.2-zts-buster`, `8-zts-buster`, `zts-buster`](https://github.com/docker-library/php/blob/277739fc7ba0948ffb38721ab3f8b139c6b41be7/8.2/buster/zts/Dockerfile)
 -	[`8.2.3-cli-alpine3.17`, `8.2-cli-alpine3.17`, `8-cli-alpine3.17`, `cli-alpine3.17`, `8.2.3-alpine3.17`, `8.2-alpine3.17`, `8-alpine3.17`, `alpine3.17`, `8.2.3-cli-alpine`, `8.2-cli-alpine`, `8-cli-alpine`, `cli-alpine`, `8.2.3-alpine`, `8.2-alpine`, `8-alpine`, `alpine`](https://github.com/docker-library/php/blob/277739fc7ba0948ffb38721ab3f8b139c6b41be7/8.2/alpine3.17/cli/Dockerfile)
 -	[`8.2.3-fpm-alpine3.17`, `8.2-fpm-alpine3.17`, `8-fpm-alpine3.17`, `fpm-alpine3.17`, `8.2.3-fpm-alpine`, `8.2-fpm-alpine`, `8-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/php/blob/eb33eee2833242f9f67827e881a8ad0432503292/8.2/alpine3.17/fpm/Dockerfile)
 -	[`8.2.3-zts-alpine3.17`, `8.2-zts-alpine3.17`, `8-zts-alpine3.17`, `zts-alpine3.17`, `8.2.3-zts-alpine`, `8.2-zts-alpine`, `8-zts-alpine`, `zts-alpine`](https://github.com/docker-library/php/blob/277739fc7ba0948ffb38721ab3f8b139c6b41be7/8.2/alpine3.17/zts/Dockerfile)
@@ -56,10 +50,6 @@ WARNING:
 -	[`8.1.17RC1-apache-bullseye`, `8.1-rc-apache-bullseye`, `8.1.17RC1-apache`, `8.1-rc-apache`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/bullseye/apache/Dockerfile)
 -	[`8.1.17RC1-fpm-bullseye`, `8.1-rc-fpm-bullseye`, `8.1.17RC1-fpm`, `8.1-rc-fpm`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/bullseye/fpm/Dockerfile)
 -	[`8.1.17RC1-zts-bullseye`, `8.1-rc-zts-bullseye`, `8.1.17RC1-zts`, `8.1-rc-zts`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/bullseye/zts/Dockerfile)
--	[`8.1.17RC1-cli-buster`, `8.1-rc-cli-buster`, `8.1.17RC1-buster`, `8.1-rc-buster`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/buster/cli/Dockerfile)
--	[`8.1.17RC1-apache-buster`, `8.1-rc-apache-buster`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/buster/apache/Dockerfile)
--	[`8.1.17RC1-fpm-buster`, `8.1-rc-fpm-buster`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/buster/fpm/Dockerfile)
--	[`8.1.17RC1-zts-buster`, `8.1-rc-zts-buster`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/buster/zts/Dockerfile)
 -	[`8.1.17RC1-cli-alpine3.17`, `8.1-rc-cli-alpine3.17`, `8.1.17RC1-alpine3.17`, `8.1-rc-alpine3.17`, `8.1.17RC1-cli-alpine`, `8.1-rc-cli-alpine`, `8.1.17RC1-alpine`, `8.1-rc-alpine`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/alpine3.17/cli/Dockerfile)
 -	[`8.1.17RC1-fpm-alpine3.17`, `8.1-rc-fpm-alpine3.17`, `8.1.17RC1-fpm-alpine`, `8.1-rc-fpm-alpine`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/alpine3.17/fpm/Dockerfile)
 -	[`8.1.17RC1-zts-alpine3.17`, `8.1-rc-zts-alpine3.17`, `8.1.17RC1-zts-alpine`, `8.1-rc-zts-alpine`](https://github.com/docker-library/php/blob/1ccf5e9105dac41fa07532a7ad9a415057d3cd22/8.1-rc/alpine3.17/zts/Dockerfile)
@@ -70,10 +60,6 @@ WARNING:
 -	[`8.1.16-apache-bullseye`, `8.1-apache-bullseye`, `8.1.16-apache`, `8.1-apache`](https://github.com/docker-library/php/blob/e38d7619bd727c056e846a32ba3bcf4d979b8bbc/8.1/bullseye/apache/Dockerfile)
 -	[`8.1.16-fpm-bullseye`, `8.1-fpm-bullseye`, `8.1.16-fpm`, `8.1-fpm`](https://github.com/docker-library/php/blob/eb33eee2833242f9f67827e881a8ad0432503292/8.1/bullseye/fpm/Dockerfile)
 -	[`8.1.16-zts-bullseye`, `8.1-zts-bullseye`, `8.1.16-zts`, `8.1-zts`](https://github.com/docker-library/php/blob/e38d7619bd727c056e846a32ba3bcf4d979b8bbc/8.1/bullseye/zts/Dockerfile)
--	[`8.1.16-cli-buster`, `8.1-cli-buster`, `8.1.16-buster`, `8.1-buster`](https://github.com/docker-library/php/blob/e38d7619bd727c056e846a32ba3bcf4d979b8bbc/8.1/buster/cli/Dockerfile)
--	[`8.1.16-apache-buster`, `8.1-apache-buster`](https://github.com/docker-library/php/blob/e38d7619bd727c056e846a32ba3bcf4d979b8bbc/8.1/buster/apache/Dockerfile)
--	[`8.1.16-fpm-buster`, `8.1-fpm-buster`](https://github.com/docker-library/php/blob/eb33eee2833242f9f67827e881a8ad0432503292/8.1/buster/fpm/Dockerfile)
--	[`8.1.16-zts-buster`, `8.1-zts-buster`](https://github.com/docker-library/php/blob/e38d7619bd727c056e846a32ba3bcf4d979b8bbc/8.1/buster/zts/Dockerfile)
 -	[`8.1.16-cli-alpine3.17`, `8.1-cli-alpine3.17`, `8.1.16-alpine3.17`, `8.1-alpine3.17`, `8.1.16-cli-alpine`, `8.1-cli-alpine`, `8.1.16-alpine`, `8.1-alpine`](https://github.com/docker-library/php/blob/e38d7619bd727c056e846a32ba3bcf4d979b8bbc/8.1/alpine3.17/cli/Dockerfile)
 -	[`8.1.16-fpm-alpine3.17`, `8.1-fpm-alpine3.17`, `8.1.16-fpm-alpine`, `8.1-fpm-alpine`](https://github.com/docker-library/php/blob/eb33eee2833242f9f67827e881a8ad0432503292/8.1/alpine3.17/fpm/Dockerfile)
 -	[`8.1.16-zts-alpine3.17`, `8.1-zts-alpine3.17`, `8.1.16-zts-alpine`, `8.1-zts-alpine`](https://github.com/docker-library/php/blob/e38d7619bd727c056e846a32ba3bcf4d979b8bbc/8.1/alpine3.17/zts/Dockerfile)
@@ -84,13 +70,11 @@ WARNING:
 -	[`8.0.28-apache-bullseye`, `8.0-apache-bullseye`, `8.0.28-apache`, `8.0-apache`](https://github.com/docker-library/php/blob/03dcf3bd0cf7d08869b53e48245086e8961f6b76/8.0/bullseye/apache/Dockerfile)
 -	[`8.0.28-fpm-bullseye`, `8.0-fpm-bullseye`, `8.0.28-fpm`, `8.0-fpm`](https://github.com/docker-library/php/blob/eb33eee2833242f9f67827e881a8ad0432503292/8.0/bullseye/fpm/Dockerfile)
 -	[`8.0.28-zts-bullseye`, `8.0-zts-bullseye`, `8.0.28-zts`, `8.0-zts`](https://github.com/docker-library/php/blob/03dcf3bd0cf7d08869b53e48245086e8961f6b76/8.0/bullseye/zts/Dockerfile)
--	[`8.0.28-cli-buster`, `8.0-cli-buster`, `8.0.28-buster`, `8.0-buster`](https://github.com/docker-library/php/blob/03dcf3bd0cf7d08869b53e48245086e8961f6b76/8.0/buster/cli/Dockerfile)
--	[`8.0.28-apache-buster`, `8.0-apache-buster`](https://github.com/docker-library/php/blob/03dcf3bd0cf7d08869b53e48245086e8961f6b76/8.0/buster/apache/Dockerfile)
--	[`8.0.28-fpm-buster`, `8.0-fpm-buster`](https://github.com/docker-library/php/blob/eb33eee2833242f9f67827e881a8ad0432503292/8.0/buster/fpm/Dockerfile)
--	[`8.0.28-zts-buster`, `8.0-zts-buster`](https://github.com/docker-library/php/blob/03dcf3bd0cf7d08869b53e48245086e8961f6b76/8.0/buster/zts/Dockerfile)
 -	[`8.0.28-cli-alpine3.16`, `8.0-cli-alpine3.16`, `8.0.28-alpine3.16`, `8.0-alpine3.16`, `8.0.28-cli-alpine`, `8.0-cli-alpine`, `8.0.28-alpine`, `8.0-alpine`](https://github.com/docker-library/php/blob/03dcf3bd0cf7d08869b53e48245086e8961f6b76/8.0/alpine3.16/cli/Dockerfile)
 -	[`8.0.28-fpm-alpine3.16`, `8.0-fpm-alpine3.16`, `8.0.28-fpm-alpine`, `8.0-fpm-alpine`](https://github.com/docker-library/php/blob/eb33eee2833242f9f67827e881a8ad0432503292/8.0/alpine3.16/fpm/Dockerfile)
 -	[`8.0.28-zts-alpine3.16`, `8.0-zts-alpine3.16`, `8.0.28-zts-alpine`, `8.0-zts-alpine`](https://github.com/docker-library/php/blob/03dcf3bd0cf7d08869b53e48245086e8961f6b76/8.0/alpine3.16/zts/Dockerfile)
+
+[![ppc64le/php build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/php.svg?label=ppc64le/php%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/php/)
 
 # Quick reference (cont.)
 
@@ -124,7 +108,7 @@ PHP is a server-side scripting language designed for web development, but which 
 ### Create a `Dockerfile` in your PHP project
 
 ```dockerfile
-FROM php:7.4-cli
+FROM ppc64le/php:7.4-cli
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "php", "./your-script.php" ]
@@ -142,7 +126,7 @@ $ docker run -it --rm --name my-running-app my-php-app
 For many simple, single file projects, you may find it inconvenient to write a complete `Dockerfile`. In such cases, you can run a PHP script by using the PHP Docker image directly:
 
 ```console
-$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:7.4-cli php your-script.php
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ppc64le/php:7.4-cli php your-script.php
 ```
 
 ## How to install more PHP extensions
@@ -154,7 +138,7 @@ We provide the helper scripts `docker-php-ext-configure`, `docker-php-ext-instal
 In order to keep the images smaller, PHP's source is kept in a compressed tar file. To facilitate linking of PHP's source with any extension, we also provide the helper script `docker-php-source` to easily extract the tar or delete the extracted source. Note: if you do use `docker-php-source` to extract the source, be sure to delete it in the same layer of the docker image.
 
 ```Dockerfile
-FROM php:7.4-cli
+FROM ppc64le/php:7.4-cli
 RUN docker-php-source extract \
 	# do important things \
 	&& docker-php-source delete
@@ -165,7 +149,7 @@ RUN docker-php-source extract \
 For example, if you want to have a PHP-FPM image with the `gd` extension, you can inherit the base image that you like, and write your own `Dockerfile` like this:
 
 ```dockerfile
-FROM php:7.4-fpm
+FROM ppc64le/php:7.4-fpm
 RUN apt-get update && apt-get install -y \
 		libfreetype6-dev \
 		libjpeg62-turbo-dev \
@@ -189,14 +173,14 @@ Some extensions are compiled by default. This depends on the PHP version you are
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
-FROM php:7.4-cli
+FROM ppc64le/php:7.4-cli
 RUN pecl install redis-5.1.1 \
 	&& pecl install xdebug-2.8.1 \
 	&& docker-php-ext-enable redis xdebug
 ```
 
 ```dockerfile
-FROM php:5.6-cli
+FROM ppc64le/php:5.6-cli
 RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
 	&& pecl install memcached-2.2.0 \
 	&& docker-php-ext-enable memcached
@@ -215,7 +199,7 @@ Unlike PHP core extensions, PECL extensions should be installed in series to fai
 Some extensions are not provided via either Core or PECL; these can be installed too, although the process is less automated:
 
 ```dockerfile
-FROM php:5.6-cli
+FROM ppc64le/php:5.6-cli
 RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.gz' -o xcache.tar.gz \
 	&& mkdir -p xcache \
 	&& tar -xf xcache.tar.gz -C xcache --strip-components=1 \
@@ -234,7 +218,7 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 The `docker-php-ext-*` scripts *can* accept an arbitrary path, but it must be absolute (to disambiguate from built-in extension names), so the above example could also be written as the following:
 
 ```dockerfile
-FROM php:5.6-cli
+FROM ppc64le/php:5.6-cli
 RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.gz' -o xcache.tar.gz \
 	&& mkdir -p /tmp/xcache \
 	&& tar -xf xcache.tar.gz -C /tmp/xcache --strip-components=1 \
@@ -276,7 +260,7 @@ The default config can be customized by copying configuration files into the `$P
 ### Example
 
 ```dockerfile
-FROM php:7.4-fpm-alpine
+FROM ppc64le/php:7.4-fpm-alpine
 
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
@@ -286,26 +270,26 @@ In many production environments, it is also recommended to (build and) enable th
 
 # Image Variants
 
-The `php` images come in many flavors, each designed for a specific use case.
+The `ppc64le/php` images come in many flavors, each designed for a specific use case.
 
-Some of these tags may have names like bullseye or buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `php:<version>-cli`
+## `ppc64le/php:<version>-cli`
 
 This variant contains the [PHP CLI](https://secure.php.net/manual/en/features.commandline.php) tool with default mods. If you need a web server, this is probably not the image you are looking for. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as a base from which to build other images.
 
 It also is the only variant which contains the (not recommended) `php-cgi` binary, which is likely necessary for some things like [PPM](https://github.com/php-pm/php-pm).
 
-Note that *all* variants of `php` contain the PHP CLI (`/usr/local/bin/php`).
+Note that *all* variants of `ppc64le/php` contain the PHP CLI (`/usr/local/bin/php`).
 
-## `php:<version>-apache`
+## `ppc64le/php:<version>-apache`
 
 This image contains Debian's Apache httpd in conjunction with PHP (as `mod_php`) and uses `mpm_prefork` by default.
 
 ### Apache with a `Dockerfile`
 
 ```dockerfile
-FROM php:7.2-apache
+FROM ppc64le/php:7.2-apache
 COPY src/ /var/www/html/
 ```
 
@@ -321,7 +305,7 @@ We recommend that you add a `php.ini` configuration file; see the "Configuration
 ### Apache without a `Dockerfile`
 
 ```console
-$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.2-apache
+$ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html ppc64le/php:7.2-apache
 ```
 
 ### Changing `DocumentRoot` (or other Apache configuration)
@@ -329,7 +313,7 @@ $ docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.
 Some applications may wish to change the default `DocumentRoot` in Apache (away from `/var/www/html`). The following demonstrates one way to do so using an environment variable (which can then be modified at container runtime as well):
 
 ```dockerfile
-FROM php:7.1-apache
+FROM ppc64le/php:7.1-apache
 
 ENV APACHE_DOCUMENT_ROOT /path/to/new/root
 
@@ -339,7 +323,7 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 
 A similar technique could be employed for other Apache configuration options.
 
-## `php:<version>-fpm`
+## `ppc64le/php:<version>-fpm`
 
 This variant contains PHP-FPM, which is a FastCGI implementation for PHP. See [the PHP-FPM website](https://php-fpm.org/) for more information about PHP-FPM.
 
@@ -355,7 +339,7 @@ Some potentially helpful resources:
 
 **WARNING:** the FastCGI protocol is inherently trusting, and thus *extremely* insecure to expose outside of a private container network -- unless you know *exactly* what you are doing (and are willing to accept the extreme risk), do not use Docker's `--publish` (`-p`) flag with this image variant.
 
-## `php:<version>-alpine`
+## `ppc64le/php:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
